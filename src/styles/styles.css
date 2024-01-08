@@ -1,0 +1,155 @@
+/* Reset de estilos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 18px;
+  outline: none; /* Remove a borda azul */
+}
+
+/* Estilo do corpo da página */
+body {
+  background-color: #8A51FC;
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #1b83e2;
+  height: 66px;
+}
+
+/* Estilo do título h1 no cabeçalho */
+h1 {
+  font-size: 24px;
+  color: #f4f4f4;
+  text-align: center;
+  padding-top: 30px; /* Espaçamento interno do topo */
+}
+
+/* Estilo do logo da página */
+.logo {
+  width: 300px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Estilo do conteúdo principal */
+main {
+  width: 375px;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  margin: 0 auto 40px;
+  padding: 44px 24px 23px; /* aplica o 1) cima 2) lados 3) baixo */
+}
+
+/* Estilo das etiquetas */
+label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+}
+
+/* Estilo do seletor */
+select {
+  background: #ffffff;
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+  height: 48px;
+  width: 100%;
+  cursor: pointer; /* Transforma o cursor em uma mãozinha */
+  appearance: none; /* Remove a seta padrão do navegador */
+  padding-left: 18px; /* Espaçamento interno à esquerda */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); /* Sombra sutil na borda */
+  font-weight: 700;
+  font-size: 18px; /* Tamanho da fonte */
+  color: #555555;
+  display: block;
+}
+
+/* Estilo de campos de entrada de texto */
+input {
+  background: #ffffff;
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+  height: 48px;
+  width: 100%;
+  margin-bottom: 24px;
+  appearance: none;
+  padding-left: 18px;
+  font-weight: 700;
+  font-size: 18px; /* Tamanho da fonte */
+  color: #555555;
+}
+
+/* Estilo do botão */
+button {
+  background: #772fd3;
+  border-radius: 25px;
+  width: 100%;
+  height: 48px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 24px; /* Espaçamento externo do topo */
+  margin-bottom: 36px; /* Espaçamento externo na parte inferior */
+}
+
+/* Resposta visual ao passar o mouse sobre o botão */
+button:hover {
+  opacity: 0.9; /* Define a transparência do item (varia de 0 a 1, sendo 0 completamente transparente e 1 completamente visível) */
+}
+
+/* Resposta visual ao clicar no botão do mouse */
+button:active {
+  opacity: 0.7;
+}
+
+/* Estilo da seção com borda */
+section {
+  border: 1px solid #772fd3;
+  border-radius: 20px;
+  margin-top: 36px; /* Espaçamento externo do topo */
+  padding: 12px;
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+}
+
+/* Estilo do contêiner de moeda */
+.currency-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 4px;
+
+}
+
+/* Estilo do nome da moeda */
+.currency {
+  font-size: 14px;
+  color: #777777;
+}
+
+/* Estilo do valor da moeda */
+.currency-value {
+  color: #555555;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.currency-value-to-convert {
+  color: #555555;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Estilo da imagem da seta */
+.arrow-img {
+  margin: 15px auto;
+  display: block;
+}

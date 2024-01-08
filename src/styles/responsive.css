@@ -1,0 +1,17 @@
+/* Estilos responsivos para o iPhone 8 */
+@media screen and (max-width: 375px) {
+
+    /* Redefina os estilos para tamanhos menores de tela */
+    body {
+        font-size: 14px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+}

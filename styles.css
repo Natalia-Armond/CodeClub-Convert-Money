@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto" sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 18px;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+/* Para chamar uma classe se usa o ponto (.) mais o nome da classe.EX: .container */
+.container {
+  width: 375px;
+  background-color: #f4f4f4;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+header {
+  background-color: #1b83e2;
+  height: 66px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #f4f4f4;
+  text-align: center;
+  padding-top: 25px; /* espaçamento interno do topo*/
+}
+
+main {
+  padding: 24px;
+}
+
+label {
+  font-size: 14px;
+
+  color: #777777;
+}
+
+select {
+  background: #ffffff;
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+  height: 48px;
+  display: block;
+  width: 100%;
+  cursor: pointer; /* transforma o cursor como maozinha */
+  outline: none; /* tirar borda azul */
+  appearance: none; /* tirar a setinha  */
+  padding-left: 16px; /* espaçamento interno esquerdo */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); /* pequena sobra da borda*/
+  margin-top: 6px; /* espaçamento externo do topo */
+  margin-bottom: 24px; /* espaçamento externo da parte de baixo */
+}
+
+input {
+  background: #ffffff;
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+  height: 48px;
+  display: block;
+  width: 100%;
+  outline: none;
+  padding-left: 18px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  font-size: 18px; /*Tamanho da fonte */
+}
+
+button {
+  background: #1b83e2;
+  border-radius: 25px;
+  height: 48px;
+  cursor: pointer;
+  color: #f4f4f4;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 36px;
+}
+
+/*Resposta visual quando passa o mouse usa o pseudo classe hover */
+button:hover {
+  opacity: 0.9; /* define atrasparencia do item vai do 0 até o 1, sendo o 0 (completamente trasparente) e o 1 ( completamente visivel )*/
+}
+
+/*Resposta visual quando clica no botão do mouse usa o pseudo classe active */
+button:active {
+  opacity: 0.7;
+}
+
+section {
+  border: 1px solid #1b83e2;
+  border-radius: 4px;
+}
+.currency-container {
+  text-align: center;
+  padding: 10px;
+}
+
+.currency-name {
+  font-size: 14px;
+  color: #777777;
+}
+.currency-value {
+    color: #1B83E2;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.arrow-img {
+    margin: 15px auto;
+    display: block;
+}

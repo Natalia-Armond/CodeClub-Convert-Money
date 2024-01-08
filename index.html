@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Metadados do documento -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Links para fontes e estilos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@100;300;400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./src/styles/styles.css" />
+  <link rel="stylesheet" href="./src/styles/responsive.css">
+
+
+  <!-- Título da página -->
+  <title>Convert Money</title>
+</head>
+
+<body>
+
+  <header>
+    <!-- Título principal -->
+    <h1> Convert Money</h1>
+  </header>
+
+  <!-- Logo da página -->
+  <img class="logo" src="./src/assets/logo.gif" alt="logo-devclub-convert-money">
+
+  <main>
+    <!-- Seleção de moeda de origem -->
+    <label>
+      Converter <b>de</b>
+      <select>
+        <option>R$ Real Brasileiro</option>
+      </select>
+    </label>
+
+    <!-- Seleção de moeda de destino -->
+    <label>
+      Converter <b> para </b>
+      <select class="currency-select">
+        <option value="dolar">US$ Dólar Americano</option>
+        <option value="euro">€ Euro</option>
+        <option value="bitcoin">Bitcoin</option>
+        <option value="libra">Libra Esterlina</option>
+      </select>
+    </label>
+
+    <!-- Campo de entrada de valor -->
+    <label>
+      Valor
+      <input class="input-initial-value" placeholder="R$ 10.000,00" />
+    </label>
+
+    <!-- Botão para conversão -->
+    <button class="convert-button">Converter</button>
+
+    <section>
+      <!-- Container para exibir a moeda de origem -->
+      <div class="currency-container">
+        <img src="./src/assets/brasil.png" alt="bandeira-brasil" />
+        <p class="currency">Real</p>
+        <p class="currency-value-to-convert">R$ 0,00</p>
+      </div>
+
+      <!-- Imagem da seta de conversão -->
+      <img class="arrow-img" src="./src/assets/Vector.png" alt="seta" />
+
+      <!-- Container para exibir a moeda de destino -->
+      <div class="currency-container">
+        <img class="currency-img" src="./src/assets/estados-unidos.png" id="currency-img" alt="bandeira-pais-conversor" />
+        <p class="currency" id="currency-name" >Dólar americano</p>
+        <p class="currency-value">US$ 0.0</p>
+      </div>
+    </section>
+  </main>
+</body>
+
+<!-- Script JavaScript -->
+<script src="./src/scripts/scripts.js"></script>
+
+</html>
