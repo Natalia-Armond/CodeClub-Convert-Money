@@ -4,16 +4,20 @@ const button = document.getElementById("convert-button");
 // chama meu select
 const select = document.getElementById("currency-select");
 
-// cria meus valores de dolar e euro
-const dolar = 5.2;
-const euro = 5.9;
-
 // criando a função de transformar valor do real em valor em dolar
-const convertValues = () => {
+const convertValues = async () => {
 
   const inputReais = document.getElementById("input-real").value; // Chamei o input pelo id ('input-real') e declarei que quero só o valor digitado (value)
   const realValueText = document.getElementById("real-value-text");
   const currencyValueText = document.getElementById("dolar-value-text");
+
+  const data = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL").then(response => response.json())
+  
+  // cria meus valores de dolar e euro
+  const dolar = data.USDBRL.high
+  const euro = data.EURBRL.high
+
+  console.log(data);
 
   // realValueText.innerHTML = inputReais; formatando a moeda para real
   realValueText.innerHTML = new Intl.NumberFormat("pt-BR", {
